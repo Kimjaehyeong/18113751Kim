@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parents' Day</title>
+<style >
+	h2{
+		background-color:#003300;width:80%;
+		margin-left: auto; margin-right: auto;
+	}
+
+
+	p{
+		background-color:#cc66ff;width:80%;
+		margin-left: auto; margin-right: auto;
+
+	}
+
+	header{
+		text-align: center;
+		width: 80%; margin-left: auto; margin-right: auto;
+	}
+	div.header{
+		background-color:  #993333 ; width: 80%;height: 100px;
+		font-style: italic;font-size: 32px;
+        margin-left: auto; margin-right: auto;
+        text-shadow: 2px 2px 5px red;
+	}
+
+    div.col1{
+	    background-color: #E6EBCC; float:center;width: 75%;
+		text-align:center;
+		border:dotted red;
+		border-width: thick;
+		font-size: 23px;
+		padding: 20px;
+        margin-left: auto; margin-right: auto;}
+    strong{
+        	color: red;
+        }
+</style>
+<meta charset="utf-8">
+</head>
+<body>
+
+
+<div class="header">
+<h1 style="text-align:center;">Parents' Day</h1></div>
+<h2 style="text-align:center;"><img src="kaneicheon.jpg" id="img1" onclick="printBday()"/></h2>
+
+
+<script type="text/javascript">
+
+function change () {
+ document.getElementById("para1").innerHTML="부모님 항상 감사합니다.";
+}
+var k=Math.floor(Math.random()*2)+1;
+
+if(k==1)
+document.getElementById("img1").src="kaneicheon.jpg";
+else
+document.getElementById("img1").src="kaneicheon1.jpg";
+
+
+</script>
+
+<div class="col1"> 
+<p><strong id="para1">부모님 감사합니다!!<strong></p>
+<p>18113751 김재형</p>
+<button onclick="change()"> Change </button>
+</div>
+</body>
+</html>
